@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Елена Андрюшихина](https://up.htmlacademy.ru/adaptive/27/user/2043231).
-* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
+* Наставник: [Анастасия Гущина (Васинская)](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
