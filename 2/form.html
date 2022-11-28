@@ -10,7 +10,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="./img/svg/logotype-mobile.svg" width="" height="" alt="Логотип «Седона»">
+      <img src="./img/svg/logotype-mobile.svg" width="185" height="96" alt="Логотип «Седона»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -43,39 +43,34 @@
     </nav>
   </header>
 
-  <main class="main-container feedback">
-    <div class="sedona-text__wrapper">
+  <main class="main-container main-inner">
+    <div class="main-inner__wrapper sedona-text">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="sedona-text__img" width="" height="" src="" alt="Sedona">
+      <img class="sedona-text__img" width="229" height="39" src="./img/svg/SEDONA-mobile.svg" alt="Sedona">
     </div>
-    <div class="feedback__wrapper">
+    <div class="feedback">
       <h2 class="feedback__title">Оставьте свой отзыв</h2>
       <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </div>
-
-    <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="half-width">
-        <fieldset class="presentation__group">
-          <legend сдфыы="presentation__title">Представьтесь:</legend>
-          <label class="name" for="name">ИМЯ*:</label>
-          <input class="name__input" type="text" id="name" name="name" value="Пётр">
-          <label class="surname" for="surname">ФАМИЛИЯ*:</label>
-          <input class="surname__input" type="text" id="surname" name="surname" value="Пустота">
-          <label class="patronymic" for="patronymic">Отчество</label>
-          <input class="patronymic__input" type="text" id="patronymic" name="patronymic" value="Викторович">
-        </fieldset>
-      </div>
-      <div class="half-width">
-        <fieldset class="contacts__group">
-          <legend class="contacts__title">Контактная информация:</legend>
-          <label class="tel" for="tel">Контактный телефон*:</label>
-          <input class="tel__input" type="tel" id="tel" name="tel" value="Введите телефон">
-          <label class="email" for="email">Электронная почта*:</label>
-          <input class="email__input" type="email" id="email" name="email" value="Введите e-mail">
-        </fieldset>
-      </div>
-      <fieldset class="impression__filter">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form__presentation presentation">
+        <legend class="presentation__title">Представьтесь:</legend>
+        <label class="presentation__name" for="name">ИМЯ*:</label>
+        <input class="presentation__name-input" type="text" id="name" name="name" value="Пётр">
+        <label class="presentation__surname" for="surname">ФАМИЛИЯ*:</label>
+        <input class="presentation__surname-input" type="text" id="surname" name="surname" value="Пустота">
+        <label class="presentation__patronymic" for="patronymic">Отчество</label>
+        <input class="presentation__patronymic-input" type="text" id="patronymic" name="patronymic" value="Викторович">
+      </fieldset>
+      <fieldset class="form__contacts contacts">
+        <legend class="contacts__title">Контактная информация:</legend>
+        <label class="contacts__tel" for="tel">Контактный телефон*:</label>
+        <input class="contacts__tel-input" type="tel" id="tel" name="tel" value="Введите телефон">
+        <label class="contacts__email" for="email">Электронная почта*:</label>
+        <input class="contacts__email-input" type="email" id="email" name="email" value="Введите e-mail">
+      </fieldset>
+      <fieldset class="form__impression impression">
         <legend class="impression__title">Ваше Общее впечатление:</legend>
         <ul class="impression__list">
           <li class="impression__item">
@@ -101,8 +96,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend class="attraction__filter">Посещенные достопримечательности:</legend>
+      <fieldset class="form__attraction attraction">
+        <legend class="attraction__title">Посещенные достопримечательности:</legend>
         <ul class="attraction__list">
           <li class="attraction__item">
             <label class="control">
@@ -133,13 +128,13 @@
             </label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="review__group">
+      </fieldset >
+      <fieldset class="review">
         <label class="review__title" for="review">Опишите свои эмоции:</label>
         <textarea name="review" id="review" rows="5">Опишите подробно все свои восторги</textarea>
       </fieldset>
-      <div class="button-feedback__wrapper">
-        <button class="button button-submit" type="submit">
+      <div class="button">
+        <button class="button__submit" type="submit">
           ОТПРАВИТЬ ОТЗЫВ
         </button>
       </div>
