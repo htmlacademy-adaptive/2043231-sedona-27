@@ -1,0 +1,47 @@
+.attraction {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.attraction__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.attraction__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.attraction__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.attraction__mark-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.attraction__input[type="checkbox"]:checked + .attraction__mark-checkbox {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg/attraction-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
