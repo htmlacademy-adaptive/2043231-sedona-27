@@ -2,28 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 .visually-hidden {
@@ -35,6 +21,39 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.button {
+  display: inline-block;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 16px 49px;
+  cursor: pointer;
+}
+.titles {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.descriptions {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
 }
 .page {
   height: 100%;
@@ -117,17 +136,6 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-}
-.advantages__title-about {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.advantages__title-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
 }
 .advantages__list {
   padding: 0;
@@ -229,24 +237,19 @@
   line-height: 21px;
   color: #333333;
 }
-.search-hotels__button {
-  display: inline-block;
-  padding: 16px 49px;
-  margin: 0 auto 49px;
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: none;
-  text-decoration: none;
-  text-align: center;
+.search-hotels__image {
+  position: relative;
+  margin: 49px 0 38px;
+  background-color: #a3caad;
+  z-index: 1;
 }
 .search-hotels__iframe {
-  width: 320px;
-  background-image: url("./img/jpg/advantages-map-mobile.jpg-min.jpg");
-  background-repeat: no-repeat;
-  margin-bottom: 38px;
+  position: relative;
+  margin: 49px 0 38px;
+  z-index: 2;
 }
 .main-footer {
-  margin: 28px;
+  padding: 28px;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -292,17 +295,6 @@
   text-align: center;
   color: #000000;
 }
-.photos__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.photos__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
 .photos__list {
   padding: 0;
   list-style-type: none;
@@ -340,33 +332,11 @@
   text-align: center;
   color: #000000;
 }
-.promo__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.promo__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
 .feedback {
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-}
-.feedback__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.feedback__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
 }
 .form {
   font-family: "PT Sans", "Roboto", sans-serif;
@@ -386,24 +356,14 @@
   text-transform: uppercase;
   color: #000000;
 }
-.presentation__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-}
-.presentation__name,
-.presentation__surname,
-.presentation__patronymic {
+.presentation__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   margin-left: 16px;
 }
-.presentation__name-input,
-.presentation__surname-input,
-.presentation__patronymic-input {
+.presentation__input {
   font-family: "PT Sans", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -418,22 +378,14 @@
   text-transform: uppercase;
   color: #000000;
 }
-.contacts__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-}
-.contacts__tel,
-.contacts__email {
+.contacts__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   margin-left: 16px;
 }
-.contacts__tel-input,
-.contacts__email-input {
+.contacts__input {
   font-family: "PT Sans", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -448,12 +400,6 @@
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   color: #000000;
-}
-.impression__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
 }
 .impression__list {
   padding: 0;
@@ -494,12 +440,6 @@
   text-transform: uppercase;
   color: #000000;
 }
-.attraction__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-}
 .attraction__list {
   padding: 0;
   list-style-type: none;
@@ -533,11 +473,6 @@
 }
 .review__title {
   display: block;
-  font-family: "PT Sans", "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
 }
 .review__textarea {
   font-family: "PT Sans", "Roboto", sans-serif;
@@ -549,22 +484,6 @@
   border: none;
   padding: 16px;
   margin-top: 10px;
-}
-.button {
-  font-family: "PT Sans", "Roboto", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-.button__submit {
-  font-family: "PT Sans", "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #ffffff;
-  border: none;
-  background-color: #81b3d2;
-  padding: 16px 49px;
-  cursor: pointer;
 }
 .footnote {
   display: block;
