@@ -1,0 +1,36 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 3px;
+  height: 24px;
+  background-color: #ffffff;
+  transform: rotate(135deg);
+  content: "";
+}
+
+.main-nav__toggle::after {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 3px;
+  height: 24px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  content: "";
+}

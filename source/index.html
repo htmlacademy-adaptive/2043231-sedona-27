@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img src="./img/svg/logotype-mobile.svg" width="185" height="96" alt="Логотип «Седона»">
     </a>
     <nav class="main-nav">
@@ -17,23 +18,23 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a class="site-list__link">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">
+            <a class="site-list__link" href="https://htmlacademy.ru">
               HTMLACADEMY
             </a>
           </li>
@@ -42,23 +43,24 @@
     </nav>
   </header>
 
-  <main class="main-container main-index">
+  <main class="main-index">
     <div class="main-index__wrapper text-index">
       <img class="text-index__img" width="282" height="214" src="./img/svg/text-index.svg"
         alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
     </div>
     <div class="advantages">
-      <h1 class="advantages__title-about">Седона — небольшой городок в Аризоне,
+      <h1 class="advantages__title-about titles">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h1>
-      <p class="advantages__title-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="advantages__title-description descriptions">Рассмотрим 5 причин, по которым Седона круче, чем
+        Гранд-Каньон!</p>
       <h2 class="visually-hidden">Преимущества</h2>
       <ol class="advantages__list">
-        <li class="advantages__item advantages__item--real-town">
+        <li class="advantages__item advantages__item--with-image">
           <div class="real-town">
             <div class="real-town__wrapper">
-              <h3 class="advantages__title advantages__title--real-town">Настоящий городок</h3>
+              <h3 class="advantages__title advantages__title--with-image">Настоящий городок</h3>
               <b class="real-town__number">— №1 —</b>
-              <p class="advantages__description advantages__description--real-town">Седона — не аттракцион для
+              <p class="advantages__description advantages__description--with-image">Седона — не аттракцион для
                 туристов, там
                 течёт своя жизнь</p>
             </div>
@@ -108,12 +110,12 @@
             </li>
           </ul>
         </li>
-        <li class="advantages__item advantages__item--bridge-devil">
+        <li class="advantages__item advantages__item--with-image">
           <div class="advantages__bridge-devil bridge-devil">
             <div class="bridge-devil__wrapper">
-              <h3 class="advantages__title advantages__title--bridge-devil">Там есть <br>мост дьявола</h3>
+              <h3 class="advantages__title advantages__title--with-image">Там есть <br>мост дьявола</h3>
               <b class="bridge-devil__number">— №2 —</b>
-              <p class="advantages__description advantages__description--bridge-devil">Да, по нему можно пройти! Если
+              <p class="advantages__description advantages__description--with-image">Да, по нему можно пройти! Если
                 вы
                 осмелитесь, конечно</p>
             </div>
@@ -147,43 +149,74 @@
       <p class="search-hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
         предложения гостиниц в Седоне
       </p>
-      <a class="search-hotels__button" href="#">НАЙТИ ГОСТИНИЦУ</a>
-      <img class="search-hotels__image" width="320" height="350" src="./img/jpg/advantages-map-mobile.jpg-min.jpg"
+      <a class="search-hotels__button button" href="#">НАЙТИ ГОСТИНИЦУ</a>
+      <img class="search-hotels__image" width="320" height="350" src="./img/jpg/advantages-map-mobile.jpg-min.jpg" -
         alt="карта.">
+      <iframe class="search-hotels__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"
+        width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag hashtag">
-        <a class="hashtag__link" href="#">#VISITSEDONA</a>
-      </div>
-      <div class="main-footer__social social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tg" href="https://t.me/htmlacademy ">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__developed developed">
-        <p class="developed__text">РАЗРАБОТАНО</p>
-        <a class="developed__link" href="https://htmlacademy.ru/">
-        </a>
-      </div>
+    <div class="main-footer__hashtag hashtag">
+      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    </div>
+    <div class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <svg class="social-icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#81B3D2" d="M0 0h48v48H0z" />
+              <g clip-path="url(#a)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                  fill="#fff" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M12 12h24v24H12z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy ">
+            <svg class="social-icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#81B3D2" d="M0 0h48v48H0z" />
+              <path
+                d="m34.44 16.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2l-11.07 6.97-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53l18.62-7.18c.87-.32 1.62.2 1.34 1.51Z"
+                fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="social-icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#81B3D2" d="M0 0h48v48H0z" />
+              <path
+                d="M31.18 17H16.81c-1.5 0-2.81 1.3-2.81 2.8v8.3c0 1.6 1.3 2.9 2.81 2.9h14.37A2.8 2.8 0 0 0 34 28.2v-8.4c.1-1.5-1.2-2.8-2.8-2.8ZM21.03 27.4v-6.8l6.84 3.4-6.84 3.4Z"
+                fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__developed developed">
+      <p class="developed__text">РАЗРАБОТАНО</p>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="developed__icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

@@ -1,0 +1,43 @@
+.impression {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.impression__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.impression__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.impression__mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+}
+
+.impression__input[type="radio"]:checked + .impression__mark-radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 25px;
+  background-color: #333333;
+  content: "";
+}
