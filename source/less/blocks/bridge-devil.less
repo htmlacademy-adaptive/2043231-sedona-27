@@ -9,3 +9,39 @@
   line-height: 21px;
   color: #ffffff;
 }
+
+.bridge-devil__image {
+  display: block;
+}
+
+@media (max-width: @mobile-width-only) {
+  .bridge-devil__image {
+    object-fit: cover;
+    width: 320px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .bridge-devil {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 512px 256px;
+  }
+
+  .bridge-devil__image {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bridge-devil {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 800px 400px;
+  }
+
+  .bridge-devil__image {
+    width: 800px;
+    order: -1;
+  }
+}

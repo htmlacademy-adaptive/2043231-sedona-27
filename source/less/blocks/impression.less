@@ -1,10 +1,19 @@
 .impression {
+  margin: 0 auto 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
 
+.impression__title {
+  padding: 24px 0 20px;
+}
+
 .impression__list {
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
@@ -16,15 +25,14 @@
   text-transform: none;
   position: relative;
   display: block;
-  padding-left: 62px;
-  padding-top: 10px;
-  margin-top: 20px;
+  margin: 0 0 16px 33px;
+  padding: 10px 0;
 }
 
 .impression__mark-radio {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -65px;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -40,4 +48,35 @@
   border-radius: 25px;
   background-color: #333333;
   content: "";
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    grid-column: span 2;
+  }
+
+  .impression__list {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 310px);
+    justify-content: end;
+  }
+
+  .impression__title {
+    font-size: 21px;
+  }
+
+  .impression__item:nth-child(2n) {
+    grid-column: 2/-1;
+  }
+
+  .impression__item {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__list {
+    display: flex;
+  }
 }
