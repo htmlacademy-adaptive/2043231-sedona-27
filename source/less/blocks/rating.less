@@ -1,0 +1,31 @@
+.rating {
+  display: flex;
+  margin: 11px 0 5px;
+  align-items: baseline;
+}
+
+.rating__icon {
+  display: block;
+  fill: rgba(0, 0, 0, 0.3);
+  margin-right: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .rating {
+    margin: 26px 20px;
+    grid-column: 2/-1;
+    grid-row: span 3;
+    justify-content: end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rating {
+    color: #ffffff;
+  }
+
+  .rating__icon {
+    fill: #ffffff;
+    fill-opacity: 1;
+  }
+}

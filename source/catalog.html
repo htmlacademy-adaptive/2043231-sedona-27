@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="./img/svg/logotype-mobile.svg" width="185" height="96" alt="Логотип «Седона»">
+      <img src="./img/svg/logo.svg" width="185" height="96" alt="Логотип «Седона»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -50,45 +51,69 @@
     </div>
     <div class="photos">
       <h2 class="photos__title titles">Фото и видео</h2>
-      <p class="photos__description descriptions">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+      <p class="photos__description descriptions">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут
+        вам
         забыть о
         политике и экономике.</p>
       <ul class="photos__list">
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="280" height="280" src="./img/jpg/photo-1-mobile.jpg-min.jpg"
+            <img class="card__image" width="1200" height="400" src="./img/jpg/card-photo-1.jpg"
               alt="неродные просторы" /></a>
-          <h3 class="card__title">Неродные просторы</h3>
-          <b class="card__author-name">Автор фото: Борис</b>
-          <img class="card__thumbsup-image" width="23" height="21" src="./img/svg/like-icon.svg.svg" alt="Лайк" />
-          <b class="card__thumbsup-value">1350</b>
+          <div class="card__wrapper-description">
+            <h3 class="card__title">Неродные просторы</h3>
+            <b class="card__author-name">Автор фото: Борис</b>
+            <div class="card__rating rating">
+              <svg class="rating__icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <b class="rating__thumbsup-value">1350</b>
+            </div>
+          </div>
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="280" height="280" src="./img/jpg/photo-2-mobile.jpg-min.jpg"
+            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-2.jpg"
               alt="Местная растительность" /></a>
-          <h3 class="card__title">Местная растительность</h3>
-          <b class="card__author-name">Автор фото: Сергей</b>
-          <img class="card__thumbsup-image" width="23" height="21" src="./img/svg/like-icon.svg.svg" alt="Лайк" />
-          <b class="card__thumbsup-value">143</b>
+          <div class="card__wrapper-description">
+            <h3 class="card__title">Местная растительность</h3>
+            <b class="card__author-name">Автор фото: Сергей</b>
+            <div class="card__rating rating">
+              <svg class="rating__icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <b class="rating__thumbsup-value">143</b>
+            </div>
+          </div>
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="280" height="280" src="./img\jpg\photo-3-mobile.jpg-min.jpg"
+            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-3.jpg"
               alt="Дорога на север" /></a>
-          <h3 class="card__title">Дорога на север</h3>
-          <b class="card__author-name">Автор фото: Петр</b>
-          <img class="card__thumbsup-image" width="23" height="21" src="./img/svg/like-icon.svg.svg" alt="Лайк" />
-          <b class="card__thumbsup-value">96</b>
+          <div class="card__wrapper-description">
+            <h3 class="card__title">Дорога на север</h3>
+            <b class="card__author-name">Автор фото: Петр</b>
+            <div class="card__rating rating">
+              <svg class="rating__icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <b class="rating__thumbsup-value">96</b>
+            </div>
+          </div>
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="280" height="280" src="./img/jpg/photo-4-moile-min.jpg"
-              alt="Мост дьявола" /></a>
-          <h3 class="card__title">Мост дьявола</h3>
-          <b class="card__author-name">Автор фото: Антон</b>
-          <img class="card__thumbsup-image" width="23" height="21" src="./img/svg/like-icon.svg.svg" alt="Лайк" />
-          <b class="card__thumbsup-value">254</b>
+            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-4.jpg" alt="Мост дьявола" /></a>
+          <div class="card__wrapper-description">
+            <h3 class="card__title">Мост дьявола</h3>
+            <b class="card__author-name">Автор фото: Антон</b>
+            <div class="card__rating rating">
+              <svg class="rating__icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <b class="rating__thumbsup-value">254</b>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -97,7 +122,7 @@
       <p class="promo__description descriptions">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
         в
         очередной раз!</p>
-      <img class="promo__video" width="280" height="177" src="./img/jpg/promo-video-mobile-min.jpg" alt="Презентация">
+      <img class="promo__video" width="800" height="500" src="./img/jpg/promo-video.jpg" alt="Презентация">
     </div>
   </main>
 

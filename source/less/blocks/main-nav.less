@@ -34,3 +34,35 @@
   transform: rotate(45deg);
   content: "";
 }
+
+@media (max-width: @mobile-width-only) {
+  .main-nav {
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .main-nav__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 1060px;
+  }
+}

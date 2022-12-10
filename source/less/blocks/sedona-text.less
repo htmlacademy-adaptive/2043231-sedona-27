@@ -2,8 +2,27 @@
   margin: 0 auto;
   padding: 59px 20px;
   background-color: #83a1b3;
-  background-image: url("../img/svg/back-mobile.svg"),
-    url("../img/jpg/back-sedona.jpg");
+  background-image: url("../img/svg/back-mask-desktop.svg"),
+    url("../img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-size: auto;
+  background-position: bottom, 50% 80%;
+  max-width: 1200px;
+}
+
+.sedona-text__img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .sedona-text {
+    background-position: bottom, 50% 100%;
+    padding: 95px 150px 117px;
+  }
+
+  .sedona-text__img {
+    width: 457px;
+    height: auto;
+  }
 }

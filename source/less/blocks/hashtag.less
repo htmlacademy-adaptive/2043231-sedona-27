@@ -3,6 +3,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  padding-bottom: 34px;
 }
 
 .hashtag__link {
@@ -11,4 +12,17 @@
   line-height: 26px;
   text-decoration: none;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .hashtag {
+    padding: 0;
+    margin: 48px auto 46px 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hashtag {
+    margin: 48px auto 46px 104px;
+  }
 }

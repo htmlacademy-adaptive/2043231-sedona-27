@@ -1,9 +1,34 @@
 .text-index {
+  margin: 0 auto;
   background-color: #c0dff1;
-  background-image: url("../img/svg/back-mobile.svg"),
-    url("../img/jpg/back-mobile.jpg");
+  background-image: url("../img/svg/back-mask-desktop.svg"),
+    url("../img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: bottom;
-  padding: 90px 15px 85px 15px;
+  background-size: auto;
+  background-position: bottom, 50% 30%;
+  max-width: 1200px;
+}
+
+.text-index__img {
+  display: block;
+  margin: 0 auto;
+  padding: 90px 19px 85px;
+}
+
+@media (min-width: @tablet-width) {
+  .text-index {
+    background-position: bottom, 50% 20%;
+  }
+
+  .text-index__img {
+    width: 461px;
+    height: auto;
+    padding: 77px 154px 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-index__img {
+    padding: 78px 370px 90px;
+  }
 }

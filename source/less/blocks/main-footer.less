@@ -1,9 +1,14 @@
 .main-footer {
-  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 28px 23px;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  max-width: 1200px;
+  background-color: #ffffff;
 }
 
 .main-footer__hashtag {
@@ -11,4 +16,14 @@
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
 }

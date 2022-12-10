@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="./img/svg/logotype-mobile.svg" width="185" height="96" alt="Логотип «Седона»">
+      <img src="./img/svg/logo.svg" width="185" height="96" alt="Логотип «Седона»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -67,9 +68,9 @@
       <fieldset class="form__contacts contacts">
         <legend class="contacts__title titles">Контактная информация:</legend>
         <label class="contacts__label contacts__label--tel" for="tel">Контактный телефон*:</label>
-        <input class="contacts__input" type="tel" id="tel" name="tel" value="Введите телефон">
+        <input class="contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон">
         <label class="contacts__label contacts__label--email" for="email">Электронная почта*:</label>
-        <input class="contacts__input" type="email" id="email" name="email" value="Введите e-mail">
+        <input class="contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail">
       </fieldset>
       <fieldset class="form__impression impression">
         <legend class="impression__title titles">Ваше Общее впечатление:</legend>
@@ -129,7 +130,7 @@
         <textarea class="review__textarea" name="review" id="review"
           rows="4">Опишите подробно все свои восторги</textarea>
       </fieldset>
-      <button class="button" type="submit">
+      <button class="button button__form" type="submit">
         ОТПРАВИТЬ ОТЗЫВ
       </button>
       <b class="footnote">* — обязательные поля</b>

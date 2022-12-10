@@ -2,10 +2,6 @@
   width: 320px;
   color: #ffffff;
   background-color: #81b3d2;
-  background-image: url("../img/svg/mask-real-town-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto;
 }
 
 .real-town__number {
@@ -13,4 +9,50 @@
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.real-town__image {
+  display: block;
+}
+
+@media (max-width: @mobile-width-only) {
+  .real-town {
+    background-image: url("../img/svg/mask-real-town-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% -5%;
+    background-size: auto;
+  }
+
+  .real-town__image {
+    object-fit: cover;
+    width: 320px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-town {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 256px 512px;
+  }
+
+  .real-town__wrapper {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-town {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 400px 800px;
+  }
+
+  .real-town__wrapper {
+    width: 400px;
+  }
+
+  .real-town__image {
+    width: 800px;
+  }
 }

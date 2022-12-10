@@ -1,15 +1,59 @@
 .photos {
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.photos__title {
+  margin: 0;
+  padding: 30px;
+}
+
+.photos__description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px 20px 40px;
+  max-width: 458px;
 }
 
 .photos__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
 
 .photos__card {
   padding: 24px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__title {
+    padding-top: 61px;
+    font-size: 30px;
+  }
+
+  .photos__description {
+    padding-bottom: 70px;
+  }
+
+  .photos__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  }
 }

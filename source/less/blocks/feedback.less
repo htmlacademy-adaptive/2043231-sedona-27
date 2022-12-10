@@ -1,6 +1,42 @@
 .feedback {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.feedback__title {
+  margin: 0;
+  padding: 36px 0 22px;
+}
+
+.feedback__description {
+  margin: 0 auto;
+  padding: 0 0 28px;
+  max-width: 435px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__title {
+    font-size: 30px;
+    padding: 64px 166px 20px;
+  }
+
+  .feedback__description {
+    padding-bottom: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__title {
+    padding-top: 115px;
+  }
+
+  .feedback__description {
+    padding-bottom: 66px;
+  }
 }
