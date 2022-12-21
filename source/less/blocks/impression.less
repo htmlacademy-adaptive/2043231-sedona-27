@@ -1,8 +1,9 @@
 .impression {
-  margin: 0 auto 8px;
+  margin: 0 0 8px;
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: "PT Sans", "Roboto", sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -50,6 +51,19 @@
   content: "";
 }
 
+.impression__label:hover .impression__mark-radio,
+.impression__input:focus + .impression__mark-radio {
+  background-color: #e5e5e5;
+}
+
+.impression__label:active .impression__mark-radio {
+  background-color: #d5d5d5;
+}
+
+.impression__label:active .impression__mark-radio::before {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .impression {
     grid-column: span 2;
@@ -64,6 +78,26 @@
 
   .impression__title {
     font-size: 21px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      top: 36px;
+      left: -190px;
+    }
+
+    &::after {
+      top: 36px;
+      right: -190px;
+    }
   }
 
   .impression__item:nth-child(2n) {
@@ -77,6 +111,34 @@
 
 @media (min-width: @desktop-width) {
   .impression__list {
+    margin: 28px 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 960px;
+  }
+
+  .impression__title {
+    font-size: 21px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      top: 36px;
+      left: -345px;
+    }
+
+    &::after {
+      top: 36px;
+      right: -345px;
+    }
   }
 }
