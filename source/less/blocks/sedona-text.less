@@ -1,13 +1,19 @@
 .sedona-text {
   margin: 0 auto;
-  padding: 59px 20px;
+  padding: 59px 0;
   background-color: #83a1b3;
-  background-image: url("../img/svg/back-mask-desktop.svg"),
-    url("../img/jpg/back-desktop.jpg");
+  background-image: url("../img/svg/back-mask-mobile.svg"),
+    url("../img/jpg/back-catalog-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom, 50% 80%;
-  max-width: 1200px;
+  width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/svg/back-mask-mobile.svg"),
+      url("../img/jpg/back-catalog-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .sedona-text__img {
@@ -17,12 +23,29 @@
 
 @media (min-width: @tablet-width) {
   .sedona-text {
-    background-position: bottom, 50% 100%;
-    padding: 95px 150px 117px;
+    padding: 95px 0 117px;
+    background-image: url("../img/svg/back-mask-desktop.svg"),
+      url("../img/jpg/back-catalog-tablet.jpg");
+    background-position: bottom, 50% 80%;
+    background-size: 1200px auto;
+    width: 768px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/back-mask-desktop.svg"),
+        url("../img/jpg/back-catalog-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .sedona-text__img {
     width: 457px;
     height: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sedona-text {
+    background-position: bottom, 0 80%;
+    width: 1200px;
   }
 }

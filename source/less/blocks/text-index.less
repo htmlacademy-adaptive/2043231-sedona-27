@@ -1,12 +1,19 @@
 .text-index {
   margin: 0 auto;
   background-color: #c0dff1;
-  background-image: url("../img/svg/back-mask-desktop.svg"),
-    url("../img/jpg/back-desktop.jpg");
+  background-image: url("../img/svg/back-mask-mobile.svg"),
+    url("../img/jpg/back-index-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom, 50% 30%;
-  max-width: 1200px;
+  width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/svg/back-mask-mobile.svg"),
+      url("../img/jpg/back-index-mobile@2x.jpg");
+    background-position: bottom, 50% 20%;
+    background-size: 320px auto;
+  }
 }
 
 .text-index__img {
@@ -17,7 +24,18 @@
 
 @media (min-width: @tablet-width) {
   .text-index {
+    background-image:  url("../img/svg/back-mask-desktop.svg"),
+      url("../img/jpg/back-index-tablet.jpg");
     background-position: bottom, 50% 20%;
+    background-size: 1200px auto, auto;
+    width: 768px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/back-mask-desktop.svg"),
+        url("../img/jpg/back-index-tablet@2x.jpg");
+      background-position: bottom, 50% 20%;
+      background-size: 1200px auto, 768px auto;
+    }
   }
 
   .text-index__img {
@@ -28,6 +46,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .text-index {
+    background-image:  url("../img/svg/back-mask-desktop.svg"),
+      url("../img/jpg/back-index-desktop.jpg");
+    background-position: bottom, 50% 20%;
+    width: 1200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/back-mask-desktop.svg"),
+        url("../img/jpg/back-index-desktop@2x.jpg");
+      background-position: bottom, 50% 35%;
+      background-size: 1200px auto;
+    }
+  }
+
   .text-index__img {
     padding: 78px 370px 90px;
   }
