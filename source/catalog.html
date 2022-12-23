@@ -47,7 +47,7 @@
   <main class="main-inner">
     <div class="main-inner__wrapper sedona-text">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="sedona-text__img" width="229" height="39" src="./img/svg/SEDONA-mobile.svg" alt="Sedona">
+      <img class="sedona-text__img" width="229" height="39" src="./img/svg/sedona-text-mobile.svg" alt="Sedona">
     </div>
     <div class="photos">
       <h2 class="photos__title titles">Фото и видео</h2>
@@ -58,8 +58,15 @@
       <ul class="photos__list">
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="1200" height="400" src="./img/jpg/card-photo-1.jpg"
-              alt="неродные просторы" /></a>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/jpg/card-photo-1-desktop.jpg 1x, ./img/jpg/card-photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/jpg/card-photo-1-tablet.jpg 1x, ./img/jpg/card-photo-1-tablet@2x.jpg 2x">
+              <img class="card__image" width="280" height="280" src="./img/jpg/card-photo-1-mobile.jpg"
+                srcset="./img/jpg/card-photo-1-mobile@2x.jpg 2x" alt="неродные просторы" />
+            </picture>
+          </a>
           <div class="card__wrapper-description">
             <h3 class="card__title">Неродные просторы</h3>
             <b class="card__author-name">Автор фото: Борис</b>
@@ -74,8 +81,15 @@
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-2.jpg"
-              alt="Местная растительность" /></a>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/jpg/card-photo-2-desktop.jpg 1x, ./img/jpg/card-photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/jpg/card-photo-2-tablet.jpg 1x, ./img/jpg/card-photo-2-tablet@2x.jpg 2x">
+              <img class="card__image" width="280" height="280" src="./img/jpg/card-photo-2-mobile.jpg"
+                srcset="./img/jpg/card-photo-2-mobile@2x.jpg 2x" alt="Местная растительность" />
+            </picture>
+          </a>
           <div class="card__wrapper-description">
             <h3 class="card__title">Местная растительность</h3>
             <b class="card__author-name">Автор фото: Сергей</b>
@@ -90,8 +104,15 @@
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-3.jpg"
-              alt="Дорога на север" /></a>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/jpg/card-photo-3-desktop.jpg 1x, ./img/jpg/card-photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/jpg/card-photo-3-tablet.jpg 1x, ./img/jpg/card-photo-3-tablet@2x.jpg 2x">
+              <img class="card__image" width="280" height="280" src="./img/jpg/card-photo-3-mobile.jpg"
+                srcset="./img/jpg/card-photo-3-mobile@2x.jpg 2x" alt="Дорога на север" />
+            </picture>
+          </a>
           <div class="card__wrapper-description">
             <h3 class="card__title">Дорога на север</h3>
             <b class="card__author-name">Автор фото: Петр</b>
@@ -106,7 +127,15 @@
         </li>
         <li class="photos__card card">
           <a class="card__link" href="#">
-            <img class="card__image" width="400" height="267" src="./img/jpg/card-photo-4.jpg" alt="Мост дьявола" /></a>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/jpg/card-photo-4-desktop.jpg 1x, ./img/jpg/card-photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/jpg/card-photo-4-tablet.jpg 1x, ./img/jpg/card-photo-4-tablet@2x.jpg 2x">
+              <img class="card__image" width="280" height="280" src="./img/jpg/card-photo-4-mobile.jpg"
+                srcset="./img/jpg/card-photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" />
+            </picture>
+          </a>
           <div class="card__wrapper-description">
             <h3 class="card__title">Мост дьявола</h3>
             <b class="card__author-name">Автор фото: Антон</b>
@@ -126,7 +155,14 @@
       <p class="promo__description descriptions">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
         в
         очередной раз!</p>
-      <img class="promo__video" width="800" height="500" src="./img/jpg/promo-video.jpg" alt="Презентация">
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="./img/jpg/promo-video-desktop.jpg 1x, ./img/jpg/promo-video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="./img/jpg/promo-video-tablet.jpg 1x, ./img/jpg/promo-video-tablet@2x.jpg 2x">
+        <img class="promo__video" width="280" height="177" src="./img/jpg/promo-video-mobile.jpg"
+          srcset="./img/jpg/promo-video-mobile@2x.jpg 2x" alt="Презентация">
+      </picture>
     </div>
   </main>
 
