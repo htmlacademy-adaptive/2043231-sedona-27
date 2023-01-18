@@ -12,14 +12,14 @@
 
 .photos__title {
   margin: 0;
-  padding: 30px;
+  padding: 38px 0 20px;
 }
 
 .photos__description {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 5px 20px 40px;
+  padding: 5px 20px 36px;
   max-width: 458px;
 }
 
@@ -31,18 +31,43 @@
   list-style-type: none;
 }
 
-.photos__card {
-  padding: 24px 20px;
+@media (max-width: @mobile-width-only) {
+  .photos__card {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photos__title {
-    padding-top: 61px;
+    padding-top: 66px;
+    padding-bottom: 28px;
     font-size: 30px;
   }
 
   .photos__description {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 
   .photos__list {
@@ -55,5 +80,15 @@
   .photos__list {
     display: grid;
     grid-template-columns: repeat(3, 400px);
+  }
+
+  .photos__title {
+    padding-top: 98px;
+    padding-bottom: 28px;
+    font-size: 30px;
+  }
+
+  .photos__description {
+    padding-bottom: 88px;
   }
 }

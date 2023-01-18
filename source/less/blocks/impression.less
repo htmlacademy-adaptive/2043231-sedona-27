@@ -10,7 +10,7 @@
 }
 
 .impression__title {
-  padding: 24px 0 20px;
+  padding: 26px 0 20px;
 }
 
 .impression__list {
@@ -26,14 +26,14 @@
   text-transform: none;
   position: relative;
   display: block;
-  margin: 0 0 16px 33px;
+  margin: 0 0 16px 30px;
   padding: 10px 0;
 }
 
 .impression__mark-radio {
   position: absolute;
   top: 0;
-  left: -65px;
+  left: -63px;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -64,7 +64,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) and (max-width: 1199px) {
   .impression {
     grid-column: span 2;
   }
@@ -79,6 +79,7 @@
   .impression__title {
     font-size: 21px;
     position: relative;
+    padding-top: 24px;
 
     &::before,
     &::after {
@@ -102,10 +103,21 @@
 
   .impression__item:nth-child(2n) {
     grid-column: 2/-1;
+    margin-left: 36px;
   }
 
   .impression__item {
     margin-left: 50px;
+  }
+
+  .impression__label {
+    margin: 8px 0 8px 14px;
+    padding: 10px 0 10px 20px;
+  }
+
+  .impression__mark-radio {
+    top: 0;
+    left: -42px;
   }
 }
 
@@ -121,6 +133,8 @@
   .impression__title {
     font-size: 21px;
     position: relative;
+    padding-top: 32px;
+    padding-bottom: 17px;
 
     &::before,
     &::after {
@@ -132,13 +146,25 @@
     }
 
     &::before {
-      top: 36px;
+      top: 44px;
       left: -345px;
     }
 
     &::after {
-      top: 36px;
+      top: 44px;
       right: -345px;
     }
+  }
+
+  .impression__item {
+    margin: 0 32px 0;
+  }
+
+  .impression__item:nth-child(3n+1) {
+    margin-left: 68px;
+  }
+
+  .impression__item:nth-child(3n+3) {
+    margin-right: 38px;
   }
 }
