@@ -9,7 +9,7 @@
 }
 
 .attraction__title {
-  padding: 24px 0 20px;
+  padding: 25px 0 20px;
 }
 
 .attraction__list {
@@ -31,14 +31,14 @@
   text-transform: none;
   position: relative;
   display: block;
-  margin: 0 0 16px;
+  margin: 0 0 16px -2px;
   padding: 10px 0;
 }
 
 .attraction__mark-checkbox {
   position: absolute;
   top: 0;
-  left: -65px;
+  left: -63px;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -101,6 +101,8 @@
     width: 308px;
     font-size: 21px;
     position: relative;
+    padding-top: 32px;
+    padding-bottom: 29px;
 
     &::before,
     &::after {
@@ -112,22 +114,23 @@
     }
 
     &::before {
-      top: 45px;
+      top: 57px;
       left: -170px;
     }
 
     &::after {
-      top: 45px;
+      top: 57px;
       right: -170px;
     }
   }
 
   .attraction__item:nth-child(2n) {
     grid-column: 2/-1;
+    margin-left: 80px;
   }
 
   .attraction__item {
-    margin-left: 85px;
+    margin-left: 89px;
   }
 }
 
@@ -138,13 +141,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .attraction__title {
     width: 308px;
     font-size: 21px;
     position: relative;
+    padding-top: 21px;
+    padding-bottom: 32px;
 
     &::before,
     &::after {
@@ -164,5 +169,24 @@
       top: 45px;
       right: -326px;
     }
+  }
+
+  .attraction__item:nth-child(4n+1) {
+    margin-left: 108px;
+    margin-right: 18px;
+  }
+
+  .attraction__item:nth-child(4n+2) {
+    margin-left: 22px;
+    margin-right: 18px;
+  }
+
+  .attraction__item:nth-child(4n+3) {
+    margin-left: 22px;
+  }
+
+  .attraction__item:nth-child(4n+4) {
+    margin-left: 20px;
+    margin-right: 15px;
   }
 }

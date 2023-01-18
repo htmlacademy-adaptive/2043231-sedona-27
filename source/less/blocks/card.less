@@ -11,7 +11,7 @@
 
 .card__title {
   margin: 0;
-  padding: 15px 0 3px;
+  padding: 11px 0 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -41,6 +41,12 @@
   width: 280px;
   height: 280px;
   object-fit: cover;
+}
+
+@media (max-width: @mobile-width-only) {
+  .card__image {
+    padding-top: 1px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -79,7 +85,7 @@
 
   .card__title {
     padding: 0;
-    margin: 22px 2px 0 20px;
+    margin: 22px 2px 1px 20px;
   }
 
   .card__author-name {
@@ -111,6 +117,14 @@
 
   .card__author-name {
     color: #ffffff;
+  }
+
+  .card:nth-child(n+2) .card__title {
+    margin: 17px 0 0 25px;
+  }
+
+  .card:nth-child(n+2) .card__author-name {
+    margin: 0 0 0 25px;
   }
 
   .card__wrapper-description {

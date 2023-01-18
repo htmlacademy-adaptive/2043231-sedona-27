@@ -15,7 +15,7 @@
 }
 
 .social__item {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .social-icon {
@@ -27,12 +27,26 @@
   fill: #669ec0;
 }
 
+.social-icon:active {
+  fill: #5496bd;
+}
+
 @media (min-width: @tablet-width) {
   .social {
     padding: 0;
   }
 
+  .social__list {
+    margin-top: 2px;
+  }
+
   .social__item {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin: 0 41px 0 0;
   }
 }

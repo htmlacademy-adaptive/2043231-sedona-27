@@ -12,7 +12,7 @@
 
 .promo__title {
   margin: 0;
-  padding: 17px 26px 28px;
+  padding: 18px 26px 27px;
 }
 
 .promo__description {
@@ -22,7 +22,7 @@
 }
 
 .promo__video {
-  margin: 0 auto 28px;
+  margin: 0 auto 24px;
   object-fit: cover;
   width: 280px;
   height: 177px;
@@ -31,27 +31,33 @@
 @media (min-width: @tablet-width) {
   .promo__title {
     font-size: 30px;
-    padding-top: 62px;
+    padding-top: 56px;
+    padding-bottom: 32px;
   }
 
   .promo__description {
-    padding-bottom: 70px;
+    padding-bottom: 89px;
   }
 
   .promo__video {
     width: 648px;
     height: 500px;
+    padding-bottom: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .promo__title {
+    padding-top: 61px;
+  }
+
   .promo__description {
-    padding-bottom: 64px;
+    padding-bottom: 87px;
   }
 
   .promo__video {
     width: 800px;
     height: 500px;
-    margin-bottom: 62px;
+    padding-bottom: 58px;
   }
 }
