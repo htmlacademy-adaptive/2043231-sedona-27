@@ -1,6 +1,6 @@
 .rating {
   display: flex;
-  margin: 11px 0 5px;
+  margin: 11px 0 0;
   align-items: baseline;
 }
 
@@ -10,6 +10,14 @@
   margin-right: 14px;
 }
 
+.rating__thumbsup-value {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
 @media (min-width: @tablet-width) {
   .rating {
     margin: 26px 20px;
@@ -17,10 +25,14 @@
     grid-row: span 3;
     justify-content: end;
   }
+
+  .rating__icon {
+    margin-right: 9px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .rating {
+  .rating__thumbsup-value {
     color: #ffffff;
   }
 

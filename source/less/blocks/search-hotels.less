@@ -8,8 +8,15 @@
 }
 
 .search-hotels__title {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
   margin: 0;
-  padding: 38px 29px 30px;
+  padding: 38px 29px 22px;
 }
 
 .search-hotels__description {
@@ -30,12 +37,15 @@
   display: block;
   border: none;
   position: absolute;
-  top: 296px;
+  top: 288px;
   left: auto;
+  width: 320px;
 }
 
 @media (min-width: @tablet-width) {
   .search-hotels__title {
+    padding-top: 61px;
+    padding-bottom: 33px;
     font-size: 30px;
   }
 
@@ -53,18 +63,27 @@
   }
 
   .search-hotels__iframe {
-    top: 292px;
-    max-width: 1200px;
+    top: 318px;
+    width: 768px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .search-hotels__title {
+    padding-top: 60px;
+  }
+
+  .search-hotels__description {
+    padding-bottom: 45px;
+  }
+
   .search-hotels__image {
     margin: 68px 0 0;
     width: 1200px;
   }
 
   .search-hotels__iframe {
-    top: 302px;
+    top: 330px;
+    width: 1200px;
   }
 }

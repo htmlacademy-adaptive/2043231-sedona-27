@@ -1,10 +1,6 @@
 .site-list {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
   text-align: center;
   list-style-type: none;
   text-transform: uppercase;
@@ -13,10 +9,14 @@
 }
 
 .site-list__link {
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   display: block;
   text-decoration: none;
   color: #ffffff;
-  padding: 17px 5px 16px;
+  padding: 15px 5px 14px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -66,8 +66,10 @@
   }
 
   .site-list__link {
-    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
     color: #000000;
+    padding: 19px 5px 16px;
 
     &--current {
       color: #766357;
