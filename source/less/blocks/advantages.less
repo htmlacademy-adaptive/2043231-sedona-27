@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
@@ -36,7 +36,7 @@
 }
 
 .advantages__title {
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -65,7 +65,7 @@
 }
 
 .advantages__title-sub {
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -75,7 +75,7 @@
 
 .advantages__number,
 .advantages__description-sub {
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -97,21 +97,27 @@
   padding: 23px 18px 0;
   background-color: #ffffff;
 
+
+  &--house {
+    background-image: url("../img/svg/advantages-house.svg");
+    background-repeat: no-repeat;
+    background-position: 6% 26%;
+    background-size: 40px;
+  }
+
+  &--food {
+    background-image: url("../img/svg/advantages-food.svg");
+    background-repeat: no-repeat;
+    background-position: 6% 33%;
+    background-size: 40px;
+  }
+
   &--souvenirs {
     padding-bottom: 46px;
-  }
-}
-
-.advantages__icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-
-  &--souvenirs {
-    width: 38px;
-    height: 40px;
+    background-image: url("../img/svg/advantages-souvenirs.svg");
+    background-repeat: no-repeat;
+    background-position: 8% 20%;
+    background-size: 32px 38px;
   }
 }
 
@@ -124,38 +130,31 @@
   }
 
   .advantages__item-sub {
-    display: grid;
-    grid-template-columns: 40px 237px;
-    gap: 10px 7px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
   }
 
   .advantages__title-sub {
-    align-self: center;
-    padding-top: 8px;
+    align-self: start;
+    padding-top: 10px;
 
-    &--food {
-      padding-top: 9px;
-    }
-
-    &--souvenirs {
-      padding-top: 7px;
+    &--house {
+      padding-top: 11px;
     }
   }
 
   .advantages__description-sub {
     grid-column: 2/3;
     grid-row: 2/3;
+    padding-top: 16px;
 
     br {
       display: none;
     }
 
-    &--food {
-      padding-top: 4px;
-    }
-
     &--souvenirs {
-      padding-top: 2px;
+      padding-top: 16px;
     }
   }
 
@@ -230,10 +229,10 @@
 
   .advantages__title-sub {
     font-size: 21px;
-    padding: 26px 0 23px;
+    padding: 156px 0 23px;
 
     &--souvenirs {
-      padding-top: 14px;
+      padding-top: 154px;
     }
   }
 
@@ -257,31 +256,27 @@
     align-items: center;
     justify-content: start;
     padding: 0;
+
+    &--house {
+      background-position: 49% 23%;
+      background-size: 77px 72px;
+    }
+
+    &--food {
+      background-position: 49% 23%;
+      background-size: 80px 68px;
+    }
+
+    &--souvenirs {
+      background-repeat: no-repeat;
+      background-position: 51% 25%;
+      background-size: 66.5px 75px;
+    }
   }
 
   .advantages__description-sub {
     padding: 0 33px;
     text-align: center;
-  }
-
-  .advantages__icon {
-    &--house {
-      width: 78px;
-      height: 72px;
-      padding-top: 60px;
-    }
-
-    &--food {
-      width: 82px;
-      height: 68px;
-      padding-top: 62px;
-    }
-
-    &--souvenirs {
-      width: 67px;
-      height: 75px;
-      padding-top: 64px;
-    }
   }
 }
 
@@ -300,17 +295,33 @@
   }
 
   .advantages__item-sub {
-    padding-top: 10px;
     width: 400px;
 
+    &--house {
+      background-position: 51% 27%;
+      background-size: 79px 72px;
+    }
+
+    &--food {
+      background-position: 50% 28%;
+      background-size: 73px 68px;
+    }
+
     &--souvenirs {
-      padding-top: 6px;
+      background-position: 50% 27%;
+      background-size: 77px 75px;
     }
   }
 
   .advantages__title-sub {
+    padding: 170px 0 23px;
+
+    &--food {
+      padding-top: 167px;
+    }
+
     &--souvenirs {
-      padding-top: 26px;
+      padding-top: 171px;
     }
   }
 
@@ -354,17 +365,5 @@
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: 330px;
-  }
-
-  .advantages__icon {
-    &--food {
-      width: 73px;
-      height: 68px;
-    }
-
-    &--souvenirs {
-      width: 77px;
-      height: 75px;
-    }
   }
 }

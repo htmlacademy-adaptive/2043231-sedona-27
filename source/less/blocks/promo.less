@@ -1,9 +1,10 @@
 .promo {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
@@ -28,6 +29,31 @@
   height: 177px;
 }
 
+.promo__button {
+  position: absolute;
+  content: "";
+  top: 234px;
+  left: 135px;
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  background-image: url("../img/svg/promo-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.promo__button:hover,
+.promo__button:focus {
+  opacity: 0.5;
+}
+
+.promo__button:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .promo__title {
     font-size: 30px;
@@ -44,6 +70,11 @@
     height: 500px;
     padding-bottom: 12px;
   }
+
+  .promo__button {
+    top: 468px;
+    left: 360px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -59,5 +90,10 @@
     width: 800px;
     height: 500px;
     padding-bottom: 58px;
+  }
+
+  .promo__button {
+    top: 471px;
+    left: 576px;
   }
 }
