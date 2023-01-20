@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
@@ -68,6 +68,10 @@
   background-position: center;
 }
 
+.attraction__input:disabled + .attraction__mark-checkbox {
+  opacity: 0.3;
+}
+
 @media (max-width: @mobile-width-only) {
   .attraction {
     position: relative;
@@ -98,6 +102,8 @@
   }
 
   .attraction__title {
+    display: block;
+    margin: 0 auto;
     width: 308px;
     font-size: 21px;
     position: relative;

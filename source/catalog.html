@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +19,8 @@
         </a>
       </div>
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span></button>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">
@@ -50,10 +53,7 @@
     </div>
     <div class="photos">
       <h2 class="photos__title titles">Фото и видео</h2>
-      <p class="photos__description descriptions">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут
-        вам
-        забыть о
-        политике и экономике.</p>
+      <p class="photos__description descriptions">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.</p>
       <ul class="photos__list">
         <li class="photos__card card">
           <a class="card__link" href="#">
@@ -150,9 +150,7 @@
     </div>
     <div class="promo">
       <h2 class="promo__title titles">Все еще сомневаетесь?</h2>
-      <p class="promo__description descriptions">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
-        в
-        очередной раз!</p>
+      <p class="promo__description descriptions">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <picture>
         <source media="(min-width: 1200px)"
           srcset="./img/jpg/promo-video-desktop.jpg 1x, ./img/jpg/promo-video-desktop@2x.jpg 2x">
@@ -161,6 +159,9 @@
         <img class="promo__video" width="280" height="177" src="./img/jpg/promo-video-mobile.jpg"
           srcset="./img/jpg/promo-video-mobile@2x.jpg 2x" alt="Презентация">
       </picture>
+      <button class="promo__button" type="button">
+        <span class="visually-hidden">Включить видео</span>
+      </button>
     </div>
   </main>
 
